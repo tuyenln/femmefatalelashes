@@ -298,9 +298,9 @@ function flexslider_file(){
 	// echo "<link rel=\"stylesheet\" href=\"".$theme_path."/css/flexslider.css\">\n";
 	// echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/jquery.flexslider.js\"></script>\n";
 	echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/bearstore.custom.js\"></script>\n";
-    echo "<link rel=\"stylesheet\" href=\"".$theme_path."/css/flexsliderme.css\">\n";
-    echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/jquery.flexsliderme.js\"></script>\n";
-    echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/jquery.flexslider-minme.js\"></script>\n";
+    echo "<link rel=\"stylesheet\" href=\"".$theme_path."/css/jquery.bxslider.css\">\n";
+    echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/jquery.bxslider.js\"></script>\n";
+    echo "<script type=\"text/javascript\" src=\"".$theme_path."/js/jquery.bxslider.min.js\"></script>\n";
 }
 
 // add_action('wp_head', 'myflext_file');

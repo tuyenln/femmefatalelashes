@@ -27,15 +27,15 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 ?>
 <h3>From Our Blog</h3>
 <h1>Beauty tips</h1>
-	<div class="flexslider">
-		<ul class="slides">
+	<div class="blog-wrapper">
+		<ul class="bxslider">
 		    <?php
 			// The Loop
 			while ( have_posts() ) : the_post();
 				echo '<li>';
 					echo '<div class="left-content">';
 					echo '<h1>' . the_title() . '</h1>';
-					echo '<div class="blog-content">' . the_content() .'</div>';
+					echo '<div class="blog-content">' . the_excerpt() .'</div>';
 					echo '</div>';
 					echo '<div class="right-content">';
 						if ( has_post_thumbnail() ) {

@@ -83,9 +83,7 @@
 
 
     jQuery(document).ready(function(){
-	  jQuery('.flexslider').flexslider({
-	    animation: "slide"
-	  });
+    	jQuery('.bxslider').bxSlider();
  
         jQuery(window).scroll(function(){
             if (jQuery(this).scrollTop() > 100) {
