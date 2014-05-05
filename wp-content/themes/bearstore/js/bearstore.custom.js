@@ -83,7 +83,9 @@
 
 
     jQuery(document).ready(function(){
-    	jQuery('.bxslider').bxSlider();
+    	jQuery('.bxslider').bxSlider({
+    		auto: true
+    	});
  
         jQuery(window).scroll(function(){
             if (jQuery(this).scrollTop() > 100) {

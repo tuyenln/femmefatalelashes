@@ -25,31 +25,99 @@ Template Name: Full Page
 // The Query
 query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 ?>
-<h3>From Our Blog</h3>
-<h1>Beauty tips</h1>
+
 	<div class="blog-wrapper">
+		<h3>From Our Blog</h3>
+		<h1>Beauty tips</h1>
 		<ul class="bxslider">
 		    <?php
 			// The Loop
-			while ( have_posts() ) : the_post();
-				echo '<li>';
-					echo '<div class="left-content">';
-					echo '<h1>' . the_title() . '</h1>';
-					echo '<div class="blog-content">' . the_excerpt() .'</div>';
-					echo '</div>';
-					echo '<div class="right-content">';
+			while ( have_posts() ) : the_post();?>
+				<li>
+					<div class="left-content">
+						<h1><?php echo  the_title() ?></h1>
+						<p class="blog-content"><?php echo the_excerpt() ?></p>
+					</div>
+					<div class="right-content">
+					<?php
 						if ( has_post_thumbnail() ) {
 						    the_post_thumbnail();
 						}
-				echo '</div>';
-				echo '</li>';
-			endwhile; ?>
+					?>	
+					</div>
+				</li>
+			<?php endwhile; ?>
 			<?php
 			// Reset Query
 			wp_reset_query();
 			?>
 		</ul>
 	</div>
+
+
+	<div class="latest-blog">
+	<?php
+		$args = array( 'numberposts' => 1 , 'category_name' => 'blog' );
+		$lastposts = get_posts( $args );
+		foreach($lastposts as $post) : setup_postdata($post); ?>
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<?php the_content(); ?>
+			<a class="shop">Shop Now</a>
+		<?php endforeach; ?>
+
+	</div>
+
+
+	<section id="recent">
+
+    <ul class="row-fluid bxslider">
+
+        <?php
+            $args = array( 'post_type' => 'product', 'stock' => 1, 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' );
+            $loop = new WP_Query( $args );
+            while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+
+                    <li class="span3">    
+
+                        <a class="product-item" id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+
+                            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
+
+                            
+
+                        </a>
+                        <div class="product-content">
+                        		<h3><?php the_title(); ?></h3>
+                        	   	<span class="price"><?php echo $product->get_price_html(); ?></span>
+                        	   	<p class="pro-description"><?php the_excerpt()?></p>
+                        	   	<a class="more-view">see more</a>
+                        </div>
+
+                        <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+                    </li><!-- /span3 -->
+        <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+
+    </ul><!-- /row-fluid -->
+</section><!-- /recent -->
+<section>
+	<?php
+		$args = array( 'numberposts' => 1 , 'category_name' => 'uncategorized' );
+		$lastposts = get_posts( $args );
+		foreach($lastposts as $post) : setup_postdata($post); ?>
+			<div class="left-image">
+					<?php
+						if ( has_post_thumbnail() ) {
+						    the_post_thumbnail();
+						}
+					?>	
+			</div>
+			<div class="right-content">
+				<div class="content-p"><?php the_content(); ?></div>
+				<div class="content-last"><?php the_excerpt() ?></div>
+			</div>
+		<?php endforeach; ?>
+</section>
 
 		</div><!-- #content -->
 	</div>
