@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<helix>
+    <positions>
+    	<position>left</position>
+        <position>cart</position>
+        <position>fullwidthbanner</position>
+        <position>shop_slidebar</position>
+        <position>right</position>
+        <position>bottom</position>
+        <position>bottom1</position>
+        <position>bottom2</position>
+        <position>bottom3</position>
+        <position>bottom4</position>
+    </positions>
+	
+    <config>
+		<fieldset name="Overview" icon="icon-info-sign color6">
+			<field type="include" file="overview.php" />
+		</fieldset>
+	
+		<fieldset name="Basic" icon="icon-home color1">
+			<field name="logo_type" type="radio" default="css" label="Logo Type" description="Select logo Type" >
+				<option value="css">CSS</option>
+				<option value="text">Text</option>
+				<option value="0">Hide</option>
+			</field>
+			<field name="logo_image" type="text" default="../../images/presets/preset1/logo.png" label="Logo Image" description="Enter your logo link." />		
+			<field name="logo_text" type="text" default="Bearstore" label="Logo Text" description="Enter your website name." />
+			<field name="logo_slogan" type="text" default="Wordpress Templates Framework" label="Logo Slogan" description="Enter your website slogan." />
+			<field name="logo_width" type="text" unit="px" default="260" label="Logo Width" description="Set the width of logo" />
+			<field name="logo_height" type="text" unit="px" default="76" label="Logo Height" description="Set the height of logo" />
+			
+			<field name="showcp" type="radio" class="btn-group" default="1" label="Show Copyright" description="Whether to show or hide copyright message from the footer.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="copyright" type="textarea" rows="6" cols="30" default="2013 BearStore Theme. All Rights Reserved." label="Copyright message" description="Set copyright message." />
+			<field name="show_helix_logo" type="radio" class="btn-group" default="1" label="Show Logo" description="Whether to show the Framework logo.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="show_flags" type="radio" class="btn-group" default="1" label="Show Flags" description="Whether to show the Flag selector.">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>	
+		</fieldset>
+		
+		<fieldset name="Presets" icon="icon-pencil color4">
+			
+			<field name="preset" type="preset" default="preset1" label="Presets" description="Select preset from the following list.">
+				<option value="preset1">Preset1</option>
+			</field>
+			
+			<field name="preset" type="presetoption" default="preset1" label="Preset Settings">
+			
+				<select name="preset1">
+					<option name="header" value="#fff" type="color">Header Color</option>
+					<option name="bg" value="#fff" type="color">Background Color</option>
+					<option name="text" value="#818181" type="color">Text Color</option>
+					<option name="link" value="#5f5f5f" type="color">Link Color</option>
+					<option name="active" value="#ee1c35" type="color">Active Color</option>
+					<option name="icons" value="#ee1c35" type="color">Icons Color</option>
+					<option name="buttons" value="#818181" type="color">Buttons Color</option>
+					<option name="newlabel" value="#d89f04" type="color">New Label Color</option>
+					<option name="salelabel" value="#72b166" type="color">Sale Label Color</option>
+				</select>
+				
+			</field>
+			
+		</fieldset>
+		
+		<fieldset name="contents" icon="icon-hdd color9">
+		
+			<fields name="blog">
+			
+				<field name="blog_category" type="radio" class="btn-group" default="2" label="Category Display" description="Include or Exclude Blog Categories">
+						<option value="0"> Hide Selected </option>
+						<option value="1"> Display Selected </option>
+						<option value="2"> Display All </option>
+				</field>
+			
+				<field name="blog_categories" type="category" multiple="1" default="" label="Blog categories" description="Include blog categories" />
+			
+				<field name="blog_order_by" type="list" default="date" label="Blog Order" description="Blog Order">
+					<option value="comment_count">Comment Count</option>
+					<option value="date">Date</option>
+					<option value="title">Title</option>
+					<option value="modified">Modified</option>
+					<option value="none">None</option>
+					<option value="id">ID</option>
+					<option value="parent">Parent</option>
+					<option value="rand">Random</option>
+				</field>			
+				
+				<field name="blog_order" type="list" default="DESC" label="Ordering Type" description="Ordering Type">
+					<option value="ASC">ASC</option>
+					<option value="DESC">DESC</option>
+				</field>
+				
+				<field name="blog_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Show Readmore Link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="blog_readmore_text" type="text" default="Read more" label="Readmore Text" description="Readmore" />				
+				<field name="blog_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="blog_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="blog_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment" />
+				<field name="blog_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments" />
+			</fields>
+			
+			<fields name="post">
+				<field name="post_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Show Read More">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="post_readmore_text" type="text" default="Continue reading" label="Readmore Text" description="Read More" />				
+				<field name="post_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="post_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="post_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment" />
+				<field name="post_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments" />
+			</fields>
+
+			<!--Category Settings-->
+			<fields name="category">			
+				<field name="category_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Read More Link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="category_readmore_text" type="text" default="Continue reading" label="Readmore Text" description="Read More" />				
+				<field name="category_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="category_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="category_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment Text" />
+				<field name="category_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments Text" />
+			</fields>
+
+			<fields name="archive">
+				<field name="archive_show_title" type="radio" default="1" label="Show Title" description="Show Archive Title">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_linked_title" type="radio" default="1" label="Linked Title" description="Archive title link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_show_author" type="radio" default="1" label="Show Author" description="Show Author">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_show_date" type="radio" default="1" label="Show Date" description="Show Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_date_format" type="text" default="d, j Y" label="Date Format" description="Use php date format." />
+				<field name="archive_show_modified_date" type="radio" default="1" label="Show Modified Date" description="Show Modified Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Show Read More Link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_readmore_text" type="text" default="Continue reading" label="Readmore Text" description="Readmore Text" />				
+				<field name="archive_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="archive_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="archive_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment Text" />
+				<field name="archive_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments Text" />
+			</fields>
+
+			<fields name="tag">
+				<field name="tag_show_title" type="radio" default="1" label="Show Title" description="Show Tag Title">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_linked_title" type="radio" default="1" label="Linked Title" description="Tag title link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_show_author" type="radio" default="1" label="Show Author" description="Show Author">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_show_date" type="radio" default="1" label="Show Date" description="Show Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_date_format" type="text" default="d, j Y" label="Date Format" description="Use php date format." />
+				<field name="tag_show_modified_date" type="radio" default="1" label="Show Modified Date" description="Show Modified Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Show Read More Link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_readmore_text" type="text" default="Continue reading" label="Readmore Text" description="Read More Text" />				
+				<field name="tag_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="tag_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="tag_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment Text" />
+				<field name="tag_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments Text" />
+			</fields>
+			
+			<fields name="author">
+				<field name="author_show_title" type="radio" default="1" label="Show Title" description="Show Author Title">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_linked_title" type="radio" default="1" label="Linked Title" description="Author title link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_show_author" type="radio" default="1" label="Show Author" description="Show Author">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_show_date" type="radio" default="1" label="Show Date" description="Show Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_date_format" type="text" default="d, j Y" label="Date Format" description="Use php date format." />
+				<field name="author_show_modified_date" type="radio" default="1" label="Show Modified Date" description="Show Modified Date">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_show_readmore" type="radio" default="1" label="Show Readmore Link" description="Show Read More Link">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_readmore_text" type="text" default="Continue reading" label="Readmore Text" description="Read More Text" />				
+				<field name="author_show_comment_link" type="radio" default="1" label="Show Comment Link" description="Link on Comments">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="author_comment_text" type="text" default="Leave a reply" label="Comment Text" description="Comment Text" />
+				<field name="author_single_comment_text" type="text" default="1 Reply" label="Single Comment Text" description="Single Comment Text" />
+				<field name="author_multiple_comment_text" type="text" default="% Replies" label="Multiple Comments Text" description="Multiple Comments Text" />
+			</fields>
+			
+		</fieldset>	
+		
+		<fieldset name="Layout" icon="icon-th color5">
+			<field name="layout_width" type="list" default="980" label="Layout Width" description="Set layout width">
+				<option value="1170">1170 (px)</option>
+				<option value="980">980 (px)</option>
+			</field>
+			
+			<field name="layout_type" type="radio" default="responsive" label="Layout Type" description="Set the type of layout as responsive or fixed.">
+				<option value="responsive">Responsive</option>
+				<option value="fixed">Fixed</option>
+			</field>
+
+			<field name="left_sidebar_width" type="list" default="3" label="Left Sidebar Width" description="Set the left sidebar width.">
+				<option value="1">span1</option>
+				<option value="2">span2</option>
+				<option value="3">span3</option>
+				<option value="4">span4</option>
+				<option value="5">span5</option>
+				<option value="6">span6</option>
+				<option value="7">span7</option>
+				<option value="8">span8</option>
+			</field>
+			
+			<field name="right_sidebar_width" type="list" default="3" label="Right Sidebar Width" description="Set the left sidebar width.">
+				<option value="1">span1</option>
+				<option value="2">span2</option>
+				<option value="3">span3</option>
+				<option value="4">span4</option>
+				<option value="5">span5</option>
+				<option value="6">span6</option>
+				<option value="7">span7</option>
+				<option value="8">span8</option>
+			</field>
+			
+		</fieldset>		
+		
+		
+		<fieldset name="Fonts" icon="icon-font color9">
+			<field name="body_font" type="list" default="" label="Body Font" description="Set the selector for body font. eg. body">
+				<option value="">Default</option>
+				<option value="Aclonica">Aclonica</option>
+				<option value="Allan">Allan</option>
+				<option value="Annie Use Your Telescope">Annie Use Your Telescope</option>
+				<option value="Anonymous Pro">Anonymous Pro</option>
+				<option value="Allerta Stencil">Allerta Stencil</option>
+				<option value="Allerta">Allerta</option>
+				<option value="Amaranth">Amaranth</option>
+				<option value="Anton">Anton</option>
+				<option value="Architects Daughter">Architects Daughter</option>
+				<option value="Arimo">Arimo</option>
+				<option value="Artifika">Artifika</option>
+				<option value="Arvo">Arvo</option>
+				<option value="Asset">Asset</option>
+				<option value="Astloch">Astloch</option>
+				<option value="Bangers">Bangers</option>
+				<option value="Bentham">Bentham</option>
+				<option value="Bevan">Bevan</option>
+				<option value="Bigshot One">Bigshot One</option>
+				<option value="Bowlby One">Bowlby One</option>
+				<option value="Bowlby One SC">Bowlby One SC</option>
+				<option value="Brawler">Brawler </option>
+				<option value="Buda:300">Buda</option>
+				<option value="Cabin">Cabin</option>
+				<option value="Calligraffitti">Calligraffitti</option>
+				<option value="Candal">Candal</option>
+				<option value="Cantarell">Cantarell</option>
+				<option value="Cardo">Cardo</option>
+				<option value="Carter One">Carter One</option>
+				<option value="Caudex">Caudex</option>
+				<option value="Cedarville Cursive">Cedarville Cursive</option>
+				<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+				<option value="Chewy">Chewy</option>
+				<option value="Coda">Coda</option>
+				<option value="Coming Soon">Coming Soon</option>
+				<option value="Copse">Copse</option>
+				<option value="Corben:700">Corben</option>
+				<option value="Cousine">Cousine</option>
+				<option value="Covered By Your Grace">Covered By Your Grace</option>
+				<option value="Crafty Girls">Crafty Girls</option>
+				<option value="Crimson Text">Crimson Text</option>
+				<option value="Crushed">Crushed</option>
+				<option value="Cuprum">Cuprum</option>
+				<option value="Damion">Damion</option>
+				<option value="Dancing Script">Dancing Script</option>
+				<option value="Dawning of a New Day">Dawning of a New Day</option>
+				<option value="Didact Gothic">Didact Gothic</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Droid Sans Mono">Droid Sans Mono</option>
+				<option value="Droid Serif">Droid Serif</option>
+				<option value="EB Garamond">EB Garamond</option>
+				<option value="Expletus Sans">Expletus Sans</option>
+				<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+				<option value="Forum">Forum</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Geo">Geo</option>
+				<option value="Give You Glory">Give You Glory</option>
+				<option value="Goblin One">Goblin One</option>
+				<option value="Goudy Bookletter 1911">Goudy Bookletter 1911</option>
+				<option value="Gravitas One">Gravitas One</option>
+				<option value="Gruppo">Gruppo</option>
+				<option value="Hammersmith One">Hammersmith One</option>
+				<option value="Holtwood One SC">Holtwood One SC</option>
+				<option value="Homemade Apple">Homemade Apple</option>
+				<option value="Inconsolata">Inconsolata</option>
+				<option value="Indie Flower">Indie Flower</option>
+				<option value="IM Fell DW Pica">IM Fell DW Pica</option>
+				<option value="IM Fell DW Pica SC">IM Fell DW Pica SC</option>
+				<option value="IM Fell Double Pica">IM Fell Double Pica</option>
+				<option value="IM Fell Double Pica SC">IM Fell Double Pica SC</option>
+				<option value="IM Fell English">IM Fell English</option>
+				<option value="IM Fell English SC">IM Fell English SC</option>
+				<option value="IM Fell French Canon">IM Fell French Canon</option>
+				<option value="IM Fell French Canon SC">IM Fell French Canon SC</option>
+				<option value="IM Fell Great Primer">IM Fell Great Primer</option>
+				<option value="IM Fell Great Primer SC">IM Fell Great Primer SC</option>
+				<option value="Irish Grover">Irish Grover</option>
+				<option value="Irish Growler">Irish Growler</option>
+				<option value="Istok Web">Istok Web</option>
+				<option value="Josefin Sans">Josefin Sans Regular 400</option>
+				<option value="Josefin Slab">Josefin Slab Regular 400</option>
+				<option value="Judson">Judson</option>
+				<option value="Jura"> Jura Regular</option>
+				<option value="Jura:500"> Jura 500</option>
+				<option value="Jura:600"> Jura 600</option>
+				<option value="Just Another Hand">Just Another Hand</option>
+				<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+				<option value="Kameron">Kameron</option>
+				<option value="Kenia">Kenia</option>
+				<option value="Kranky">Kranky</option>
+				<option value="Kreon">Kreon</option>
+				<option value="Kristi">Kristi</option>
+				<option value="La Belle Aurore">La Belle Aurore</option>
+				<option value="Lato:100">Lato 100</option>
+				<option value="Lato:100italic">Lato 100 (plus italic)</option>
+				<option value="Lato:300">Lato Light 300</option>
+				<option value="Lato">Lato</option>
+				<option value="Lato:bold">Lato Bold 700</option>
+				<option value="Lato:900">Lato 900</option>
+				<option value="League Script">League Script</option>
+				<option value="Lekton"> Lekton </option>
+				<option value="Limelight"> Limelight </option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lobster Two">Lobster Two</option>
+				<option value="Lora">Lora</option>
+				<option value="Love Ya Like A Sister">Love Ya Like A Sister</option>
+				<option value="Loved by the King">Loved by the King</option>
+				<option value="Luckiest Guy">Luckiest Guy</option>
+				<option value="Maiden Orange">Maiden Orange</option>
+				<option value="Mako">Mako</option>
+				<option value="Maven Pro"> Maven Pro</option>
+				<option value="Maven Pro:500"> Maven Pro 500</option>
+				<option value="Maven Pro:700"> Maven Pro 700</option>
+				<option value="Maven Pro:900"> Maven Pro 900</option>
+				<option value="Meddon">Meddon</option>
+				<option value="MedievalSharp">MedievalSharp</option>
+				<option value="Megrim">Megrim</option>
+				<option value="Merriweather">Merriweather</option>
+				<option value="Metrophobic">Metrophobic</option>
+				<option value="Michroma">Michroma</option>
+				<option value="Miltonian Tattoo">Miltonian Tattoo</option>
+				<option value="Miltonian">Miltonian</option>
+				<option value="Modern Antiqua">Modern Antiqua</option>
+				<option value="Monofett">Monofett</option>
+				<option value="Molengo">Molengo</option>
+				<option value="Mountains of Christmas">Mountains of Christmas</option>
+				<option value="Muli:300">Muli Light</option>
+				<option value="Muli">Muli Regular</option>
+				<option value="Neucha">Neucha</option>
+				<option value="Neuton">Neuton</option>
+				<option value="News Cycle">News Cycle</option>
+				<option value="Nixie One">Nixie One</option>
+				<option value="Nobile">Nobile</option>
+				<option value="Nova Cut">Nova Cut</option>
+				<option value="Nova Flat">Nova Flat</option>
+				<option value="Nova Mono">Nova Mono</option>
+				<option value="Nova Oval">Nova Oval</option>
+				<option value="Nova Round">Nova Round</option>
+				<option value="Nova Script">Nova Script</option>
+				<option value="Nova Slim">Nova Slim</option>
+				<option value="Nova Square">Nova Square</option>
+				<option value="Nunito:light"> Nunito Light</option>
+				<option value="Nunito"> Nunito Regular</option>
+				<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+				<option value="Old Standard TT">Old Standard TT</option>
+				<option value="Open Sans:300">Open Sans light</option>
+				<option value="Open Sans">Open Sans regular</option>
+				<option value="Open Sans:600">Open Sans 600</option>
+				<option value="Open Sans:800">Open Sans bold</option>
+				<option value="Open Sans Condensed:300">Open Sans Condensed</option>
+				<option value="Orbitron">Orbitron Regular (400)</option>
+				<option value="Orbitron:500">Orbitron 500</option>
+				<option value="Orbitron:700">Orbitron Regular (700)</option>
+				<option value="Orbitron:900">Orbitron 900</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Over the Rainbow">Over the Rainbow</option>
+				<option value="Reenie Beanie">Reenie Beanie</option>
+				<option value="Pacifico">Pacifico</option>
+				<option value="Patrick Hand">Patrick Hand</option>
+				<option value="Paytone One">Paytone One</option>
+				<option value="Permanent Marker">Permanent Marker</option>
+				<option value="Philosopher">Philosopher</option>
+				<option value="Play">Play</option>
+				<option value="Playfair Display"> Playfair Display </option>
+				<option value="Podkova"> Podkova </option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans Narrow:regular,bold">PT Sans Narrow (plus bold)</option>
+				<option value="PT Serif">PT Serif</option>
+				<option value="PT Serif Caption">PT Serif Caption</option>
+				<option value="Puritan">Puritan</option>
+				<option value="Quattrocento">Quattrocento</option>
+				<option value="Quattrocento Sans">Quattrocento Sans</option>
+				<option value="Radley">Radley</option>
+				<option value="Raleway:100">Raleway</option>
+				<option value="Redressed">Redressed</option>
+				<option value="Rock Salt">Rock Salt</option>
+				<option value="Rokkitt">Rokkitt</option>
+				<option value="Ruslan Display">Ruslan Display</option>
+				<option value="Schoolbell">Schoolbell</option>
+				<option value="Shadows Into Light">Shadows Into Light</option>
+				<option value="Shanti">Shanti</option>
+				<option value="Sigmar One">Sigmar One</option>
+				<option value="Six Caps">Six Caps</option>
+				<option value="Slackey">Slackey</option>
+				<option value="Smythe">Smythe</option>
+				<option value="Sniglet:800">Sniglet</option>
+				<option value="Special Elite">Special Elite</option>
+				<option value="Stardos Stencil">Stardos Stencil</option>
+				<option value="Sue Ellen Francisco">Sue Ellen Francisco</option>
+				<option value="Sunshiney">Sunshiney</option>
+				<option value="Swanky and Moo Moo">Swanky and Moo Moo</option>
+				<option value="Syncopate">Syncopate</option>
+				<option value="Tangerine">Tangerine</option>
+				<option value="Tenor Sans"> Tenor Sans </option>
+				<option value="Terminal Dosis Light">Terminal Dosis Light</option>
+				<option value="The Girl Next Door">The Girl Next Door</option>
+				<option value="Tinos">Tinos</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ultra">Ultra</option>
+				<option value="Unkempt">Unkempt</option>
+				<option value="UnifrakturCook:bold">UnifrakturCook</option>
+				<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+				<option value="Varela">Varela</option>
+				<option value="Varela Round">Varela Round</option>
+				<option value="Vibur">Vibur</option>
+				<option value="Vollkorn">Vollkorn</option>
+				<option value="VT323">VT323</option>
+				<option value="Waiting for the Sunrise">Waiting for the Sunrise</option>
+				<option value="Wallpoet">Wallpoet</option>
+				<option value="Walter Turncoat">Walter Turncoat</option>
+				<option value="Wire One">Wire One</option>
+				<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+				<option value="Yanone Kaffeesatz:300">Yanone Kaffeesatz:300</option>
+				<option value="Yanone Kaffeesatz:400">Yanone Kaffeesatz:400</option>
+				<option value="Yanone Kaffeesatz:700">Yanone Kaffeesatz:700</option>
+				<option value="Yeseva One">Yeseva One</option>
+				<option value="Zeyada">Zeyada</option> 
+			</field>
+			<field name="header_font" type="list" default="" label="Headers Font" description="Set the selector for header fonts. eg h1,h2,h3,h4,h5">
+				<option value="">Default</option>
+				<option value="Aclonica">Aclonica</option>
+				<option value="Allan">Allan</option>
+				<option value="Annie Use Your Telescope">Annie Use Your Telescope</option>
+				<option value="Anonymous Pro">Anonymous Pro</option>
+				<option value="Allerta Stencil">Allerta Stencil</option>
+				<option value="Allerta">Allerta</option>
+				<option value="Amaranth">Amaranth</option>
+				<option value="Anton">Anton</option>
+				<option value="Architects Daughter">Architects Daughter</option>
+				<option value="Arimo">Arimo</option>
+				<option value="Artifika">Artifika</option>
+				<option value="Arvo">Arvo</option>
+				<option value="Asset">Asset</option>
+				<option value="Astloch">Astloch</option>
+				<option value="Bangers">Bangers</option>
+				<option value="Bentham">Bentham</option>
+				<option value="Bevan">Bevan</option>
+				<option value="Bigshot One">Bigshot One</option>
+				<option value="Bowlby One">Bowlby One</option>
+				<option value="Bowlby One SC">Bowlby One SC</option>
+				<option value="Brawler">Brawler </option>
+				<option value="Buda:300">Buda</option>
+				<option value="Cabin">Cabin</option>
+				<option value="Calligraffitti">Calligraffitti</option>
+				<option value="Candal">Candal</option>
+				<option value="Cantarell">Cantarell</option>
+				<option value="Cardo">Cardo</option>
+				<option value="Carter One">Carter One</option>
+				<option value="Caudex">Caudex</option>
+				<option value="Cedarville Cursive">Cedarville Cursive</option>
+				<option value="Cherry Cream Soda">Cherry Cream Soda</option>
+				<option value="Chewy">Chewy</option>
+				<option value="Coda">Coda</option>
+				<option value="Coming Soon">Coming Soon</option>
+				<option value="Copse">Copse</option>
+				<option value="Corben:700">Corben</option>
+				<option value="Cousine">Cousine</option>
+				<option value="Covered By Your Grace">Covered By Your Grace</option>
+				<option value="Crafty Girls">Crafty Girls</option>
+				<option value="Crimson Text">Crimson Text</option>
+				<option value="Crushed">Crushed</option>
+				<option value="Cuprum">Cuprum</option>
+				<option value="Damion">Damion</option>
+				<option value="Dancing Script">Dancing Script</option>
+				<option value="Dawning of a New Day">Dawning of a New Day</option>
+				<option value="Didact Gothic">Didact Gothic</option>
+				<option value="Droid Sans">Droid Sans</option>
+				<option value="Droid Sans Mono">Droid Sans Mono</option>
+				<option value="Droid Serif">Droid Serif</option>
+				<option value="EB Garamond">EB Garamond</option>
+				<option value="Expletus Sans">Expletus Sans</option>
+				<option value="Fontdiner Swanky">Fontdiner Swanky</option>
+				<option value="Forum">Forum</option>
+				<option value="Francois One">Francois One</option>
+				<option value="Geo">Geo</option>
+				<option value="Give You Glory">Give You Glory</option>
+				<option value="Goblin One">Goblin One</option>
+				<option value="Goudy Bookletter 1911">Goudy Bookletter 1911</option>
+				<option value="Gravitas One">Gravitas One</option>
+				<option value="Gruppo">Gruppo</option>
+				<option value="Hammersmith One">Hammersmith One</option>
+				<option value="Holtwood One SC">Holtwood One SC</option>
+				<option value="Homemade Apple">Homemade Apple</option>
+				<option value="Inconsolata">Inconsolata</option>
+				<option value="Indie Flower">Indie Flower</option>
+				<option value="IM Fell DW Pica">IM Fell DW Pica</option>
+				<option value="IM Fell DW Pica SC">IM Fell DW Pica SC</option>
+				<option value="IM Fell Double Pica">IM Fell Double Pica</option>
+				<option value="IM Fell Double Pica SC">IM Fell Double Pica SC</option>
+				<option value="IM Fell English">IM Fell English</option>
+				<option value="IM Fell English SC">IM Fell English SC</option>
+				<option value="IM Fell French Canon">IM Fell French Canon</option>
+				<option value="IM Fell French Canon SC">IM Fell French Canon SC</option>
+				<option value="IM Fell Great Primer">IM Fell Great Primer</option>
+				<option value="IM Fell Great Primer SC">IM Fell Great Primer SC</option>
+				<option value="Irish Grover">Irish Grover</option>
+				<option value="Irish Growler">Irish Growler</option>
+				<option value="Istok Web">Istok Web</option>
+				<option value="Josefin Sans">Josefin Sans Regular 400</option>
+				<option value="Josefin Slab">Josefin Slab Regular 400</option>
+				<option value="Judson">Judson</option>
+				<option value="Jura"> Jura Regular</option>
+				<option value="Jura:500"> Jura 500</option>
+				<option value="Jura:600"> Jura 600</option>
+				<option value="Just Another Hand">Just Another Hand</option>
+				<option value="Just Me Again Down Here">Just Me Again Down Here</option>
+				<option value="Kameron">Kameron</option>
+				<option value="Kenia">Kenia</option>
+				<option value="Kranky">Kranky</option>
+				<option value="Kreon">Kreon</option>
+				<option value="Kristi">Kristi</option>
+				<option value="La Belle Aurore">La Belle Aurore</option>
+				<option value="Lato:100">Lato 100</option>
+				<option value="Lato:100italic">Lato 100 (plus italic)</option>
+				<option value="Lato:300">Lato Light 300</option>
+				<option value="Lato">Lato</option>
+				<option value="Lato:bold">Lato Bold 700</option>
+				<option value="Lato:900">Lato 900</option>
+				<option value="League Script">League Script</option>
+				<option value="Lekton"> Lekton </option>
+				<option value="Limelight"> Limelight </option>
+				<option value="Lobster">Lobster</option>
+				<option value="Lobster Two">Lobster Two</option>
+				<option value="Lora">Lora</option>
+				<option value="Love Ya Like A Sister">Love Ya Like A Sister</option>
+				<option value="Loved by the King">Loved by the King</option>
+				<option value="Luckiest Guy">Luckiest Guy</option>
+				<option value="Maiden Orange">Maiden Orange</option>
+				<option value="Mako">Mako</option>
+				<option value="Maven Pro"> Maven Pro</option>
+				<option value="Maven Pro:500"> Maven Pro 500</option>
+				<option value="Maven Pro:700"> Maven Pro 700</option>
+				<option value="Maven Pro:900"> Maven Pro 900</option>
+				<option value="Meddon">Meddon</option>
+				<option value="MedievalSharp">MedievalSharp</option>
+				<option value="Megrim">Megrim</option>
+				<option value="Merriweather">Merriweather</option>
+				<option value="Metrophobic">Metrophobic</option>
+				<option value="Michroma">Michroma</option>
+				<option value="Miltonian Tattoo">Miltonian Tattoo</option>
+				<option value="Miltonian">Miltonian</option>
+				<option value="Modern Antiqua">Modern Antiqua</option>
+				<option value="Monofett">Monofett</option>
+				<option value="Molengo">Molengo</option>
+				<option value="Mountains of Christmas">Mountains of Christmas</option>
+				<option value="Muli:300">Muli Light</option>
+				<option value="Muli">Muli Regular</option>
+				<option value="Neucha">Neucha</option>
+				<option value="Neuton">Neuton</option>
+				<option value="News Cycle">News Cycle</option>
+				<option value="Nixie One">Nixie One</option>
+				<option value="Nobile">Nobile</option>
+				<option value="Nova Cut">Nova Cut</option>
+				<option value="Nova Flat">Nova Flat</option>
+				<option value="Nova Mono">Nova Mono</option>
+				<option value="Nova Oval">Nova Oval</option>
+				<option value="Nova Round">Nova Round</option>
+				<option value="Nova Script">Nova Script</option>
+				<option value="Nova Slim">Nova Slim</option>
+				<option value="Nova Square">Nova Square</option>
+				<option value="Nunito:light"> Nunito Light</option>
+				<option value="Nunito"> Nunito Regular</option>
+				<option value="OFL Sorts Mill Goudy TT">OFL Sorts Mill Goudy TT</option>
+				<option value="Old Standard TT">Old Standard TT</option>
+				<option value="Open Sans:300">Open Sans light</option>
+				<option value="Open Sans">Open Sans regular</option>
+				<option value="Open Sans:600">Open Sans 600</option>
+				<option value="Open Sans:800">Open Sans bold</option>
+				<option value="Open Sans Condensed:300">Open Sans Condensed</option>
+				<option value="Orbitron">Orbitron Regular (400)</option>
+				<option value="Orbitron:500">Orbitron 500</option>
+				<option value="Orbitron:700">Orbitron Regular (700)</option>
+				<option value="Orbitron:900">Orbitron 900</option>
+				<option value="Oswald">Oswald</option>
+				<option value="Over the Rainbow">Over the Rainbow</option>
+				<option value="Reenie Beanie">Reenie Beanie</option>
+				<option value="Pacifico">Pacifico</option>
+				<option value="Patrick Hand">Patrick Hand</option>
+				<option value="Paytone One">Paytone One</option>
+				<option value="Permanent Marker">Permanent Marker</option>
+				<option value="Philosopher">Philosopher</option>
+				<option value="Play">Play</option>
+				<option value="Playfair Display"> Playfair Display </option>
+				<option value="Podkova"> Podkova </option>
+				<option value="PT Sans">PT Sans</option>
+				<option value="PT Sans Narrow">PT Sans Narrow</option>
+				<option value="PT Sans Narrow:regular,bold">PT Sans Narrow (plus bold)</option>
+				<option value="PT Serif">PT Serif</option>
+				<option value="PT Serif Caption">PT Serif Caption</option>
+				<option value="Puritan">Puritan</option>
+				<option value="Quattrocento">Quattrocento</option>
+				<option value="Quattrocento Sans">Quattrocento Sans</option>
+				<option value="Radley">Radley</option>
+				<option value="Raleway:100">Raleway</option>
+				<option value="Redressed">Redressed</option>
+				<option value="Rock Salt">Rock Salt</option>
+				<option value="Rokkitt">Rokkitt</option>
+				<option value="Ruslan Display">Ruslan Display</option>
+				<option value="Schoolbell">Schoolbell</option>
+				<option value="Shadows Into Light">Shadows Into Light</option>
+				<option value="Shanti">Shanti</option>
+				<option value="Sigmar One">Sigmar One</option>
+				<option value="Six Caps">Six Caps</option>
+				<option value="Slackey">Slackey</option>
+				<option value="Smythe">Smythe</option>
+				<option value="Sniglet:800">Sniglet</option>
+				<option value="Special Elite">Special Elite</option>
+				<option value="Stardos Stencil">Stardos Stencil</option>
+				<option value="Sue Ellen Francisco">Sue Ellen Francisco</option>
+				<option value="Sunshiney">Sunshiney</option>
+				<option value="Swanky and Moo Moo">Swanky and Moo Moo</option>
+				<option value="Syncopate">Syncopate</option>
+				<option value="Tangerine">Tangerine</option>
+				<option value="Tenor Sans"> Tenor Sans </option>
+				<option value="Terminal Dosis Light">Terminal Dosis Light</option>
+				<option value="The Girl Next Door">The Girl Next Door</option>
+				<option value="Tinos">Tinos</option>
+				<option value="Ubuntu">Ubuntu</option>
+				<option value="Ultra">Ultra</option>
+				<option value="Unkempt">Unkempt</option>
+				<option value="UnifrakturCook:bold">UnifrakturCook</option>
+				<option value="UnifrakturMaguntia">UnifrakturMaguntia</option>
+				<option value="Varela">Varela</option>
+				<option value="Varela Round">Varela Round</option>
+				<option value="Vibur">Vibur</option>
+				<option value="Vollkorn">Vollkorn</option>
+				<option value="VT323">VT323</option>
+				<option value="Waiting for the Sunrise">Waiting for the Sunrise</option>
+				<option value="Wallpoet">Wallpoet</option>
+				<option value="Walter Turncoat">Walter Turncoat</option>
+				<option value="Wire One">Wire One</option>
+				<option value="Yanone Kaffeesatz">Yanone Kaffeesatz</option>
+				<option value="Yanone Kaffeesatz:300">Yanone Kaffeesatz:300</option>
+				<option value="Yanone Kaffeesatz:400">Yanone Kaffeesatz:400</option>
+				<option value="Yanone Kaffeesatz:700">Yanone Kaffeesatz:700</option>
+				<option value="Yeseva One">Yeseva One</option>
+				<option value="Zeyada">Zeyada</option>
+			</field>
+		</fieldset>
+		<!--Start Menu Tab-->
+		<fieldset name="WooCommerce" icon="icon-shopping-cart color6">
+		<field name="preset" type="heading" label="Category Page"></field>
+			<field name="woo_new_badge" type="radio" default="1" label="Show new items badge" description="Choose yes if you want to show a NEW item badge over the new products.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="woo_new_badge_days" type="text" default="3" label="Days to show badge" description="Please insert the number of days after a product is published to display the badge.">
+			</field>
+			<field name="woo_img_hover" type="radio" default="1" label="Image product hover" description="Choose yes if you want to show product image change when hover.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="woo_catalog_mode" type="radio" default="0" label="Shop Catalog Mode" description="Shop Catalog Mode.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="woo_page_layout" type="list" default="1" label="Shop page layout" description="Shop page layout.">
+				<option value="1">One Column</option>
+				<option value="2">Two Columns Left</option>
+				<option value="3">Two Columns Right</option>
+			</field>
+			<field name="woo_product_columns" type="list" default="4" label="Shop product columns" description="Shop product columns.">
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</field>
+			<field name="woo_product_per_page" type="text" default="12" label="Products per page" description="Products per page.">
+			</field>
+        </fieldset>
+        <!--End Menu Tab-->		
+		<fieldset name="Advanced" icon="icon-cogs color3">
+			<field name="enable_ga" type="radio" default="0" label="Google Analytics">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="ga_code" type="textarea" rows="6" cols="30" default="" label="Analytic code" description="Analytics code" />
+			
+			<field name="validator" type="radio" default="1" label="Validation link" description="Whether to show the HTML and CSS validation link.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>	
+			
+			<field name="gototop" type="radio" default="1" label="Goto Top" description="Whether to show or hide goto top feature">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>	
+			
+			<field name="wpcredit" type="radio" default="1" label="Wordpress Link" description="Whether to show the wordpress credit link.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+			<field name="showadminbar" type="radio" default="1" label="Admin Bar" description="Whether to show or hide admin bar.">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>
+
+			<field name="less" type="radio" default="1" label="Less" description="Less">
+				<option value="1">Enable</option>
+				<option value="0">Disable</option>
+			</field>	
+			
+		</fieldset>
+		
+	</config>
+</helix>
