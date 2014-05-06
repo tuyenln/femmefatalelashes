@@ -18,13 +18,13 @@ define('WP_MEMORY_LIMIT', '512M');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'i304052_wp1');
+define('DB_NAME', 'ebluesto_fem');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'ebluesto_fem');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', '123@123a');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -36,8 +36,8 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 
-define('WP_HOME','http://127.0.0.1/femmefatalelashes/');
-define('WP_SITEURL','http://127.0.0.1/femmefatalelashes/');
+define('WP_HOME','femmefatalelashes.ebluestore.com');
+define('WP_SITEURL','femmefatalelashes.ebluestore.com');
 
 /**#@+
  * Authentication Unique Keys and Salts.
