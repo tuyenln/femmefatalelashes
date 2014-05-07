@@ -5285,6 +5285,6 @@ ul.rss li::after {
 .home .blog-wrapper .left-content h1{font: bold 37px 'Open Sans';color: #000;text-align: right;line-height: 40px;text-transform: uppercase;padding-bottom: 15px;}
 .home .blog-wrapper .left-content p{font: normal 20px 'libre_baskervilleregular';color: #000;text-align: left;line-height: 34px;}
 .home .blog-wrapper .right-content{width: 370px;display: inline-block;vertical-align: top;padding: 0 0 0 40px;margin-left: 30px;background: url("../images/line.jpg") no-repeat left center;}
-
+.home .blog-wrapper .bx-wrapper .bx-pager{display: none;}
 
 

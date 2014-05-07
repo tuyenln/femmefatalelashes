@@ -113,13 +113,9 @@
 	background: url(../images/next.jpg) no-repeat top left;
 }
 
-.bx-wrapper .bx-prev:hover {
-	background-position: 0 0;
-}
+.bx-wrapper .bx-prev:hover {}
 
-.bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
-}
+.bx-wrapper .bx-next:hover {}
 
 .bx-wrapper .bx-controls-direction a {
 	position: absolute;
