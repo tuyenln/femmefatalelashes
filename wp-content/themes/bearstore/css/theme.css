@@ -5277,8 +5277,8 @@ ul.rss li::after {
 .fixed .hidden-desktop {
   display: none;
 }
-.home .blog-wrapper ul,.home .blog-wrapper li{list-style: none;margin: 0;padding: 0;}
-.home .blog-wrapper > h3{font: bold 20px 'Open Sans';color: #000;opacity: 0.58;text-align: center;margin: 0;}
+.home .blog-wrapper ul,.home .blog-wrapper li{list-style: none;text-align: center;}
+.home .blog-wrapper > h3{font: bold 20px 'Open Sans';color: #000;opacity: 0.58;text-align: center;margin: 0;text-transform: uppercase;}
 .home .blog-wrapper > h1{font: normal 26px 'libre_baskervilleregular';color: #000;text-align: center;margin: 0;text-transform: uppercase;padding-bottom: 30px;}
 .home .blog-wrapper .bxslider{text-align: center;}
 .home .blog-wrapper .left-content{width: 300px;display: inline-block;vertical-align: top;text-align: left;}
