@@ -36,8 +36,8 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 
-// define('WP_HOME','femmefatalelashes.ebluestore.com');
-// define('WP_SITEURL','femmefatalelashes.ebluestore.com');
+define('WP_HOME','femmefatalelashes.ebluestore.com');
+define('WP_SITEURL','femmefatalelashes.ebluestore.com');
 
 /**#@+
  * Authentication Unique Keys and Salts.
