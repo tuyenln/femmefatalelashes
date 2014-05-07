@@ -16,7 +16,6 @@ define('WP_MEMORY_LIMIT', '512M');
  * @package WordPress
  */
 
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'ebluesto_fem');
@@ -37,8 +36,8 @@ define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
 
 
-define('WP_HOME','femmefatalelashes.ebluestore.com');
-define('WP_SITEURL','femmefatalelashes.ebluestore.com');
+// define('WP_HOME','femmefatalelashes.ebluestore.com');
+// define('WP_SITEURL','femmefatalelashes.ebluestore.com');
 
 /**#@+
  * Authentication Unique Keys and Salts.
