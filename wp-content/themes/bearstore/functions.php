@@ -5,8 +5,8 @@
     * @copyright Copyright (c) 2010 - 2013 JoomShaper
     * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
     */
-define('WP_HOME','femmefatalelashes.ebluestore.com');
-define('WP_SITEURL','femmefatalelashes.ebluestore.com');
+// define('WP_HOME','femmefatalelashes.ebluestore.com');
+// define('WP_SITEURL','femmefatalelashes.ebluestore.com');
     define('_THEME', get_template()); //Define _THEME
     define('DS', '/');
 require_once ('helix/helix.php');
