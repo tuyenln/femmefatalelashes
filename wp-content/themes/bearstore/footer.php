@@ -12,7 +12,7 @@
 <?php if (has_visible_widgets( 'bottom' ) ) : ?>
 <div class="footer-info-top">
 	<div class="footer-info container">
-			<?php dynamic_sidebar('bottom'); ?>
+			<?php //dynamic_sidebar('bottom'); ?>
 
 	</div>
 </div>
