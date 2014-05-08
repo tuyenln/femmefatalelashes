@@ -64,13 +64,23 @@ class Nova_Widget_Cart extends WP_Widget {
 		echo $before_widget;
 
 		echo '<div class="shopping-cart">
+			<div class="my-bag">Shopping Bag</div>
 			<a class="mini-cart-title" title="View contents of your shopping cart" href="'.$woocommerce->cart->get_cart_url().'">
 			<span class="cart_circle">
 				<span class="count" style="display:none"><span class="count-box">'. sprintf(_n('%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count).'</span></span>
-				<i class="icon-bag"></i>
 			</span>
 			</a>
 			</div>';
+
+		//tuyenln comment
+		// echo '<div class="shopping-cart">
+		// 	<a class="mini-cart-title" title="View contents of your shopping cart" href="'.$woocommerce->cart->get_cart_url().'">
+		// 	<span class="cart_circle">
+		// 		<span class="count" style="display:none"><span class="count-box">'. sprintf(_n('%d', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count).'</span></span>
+		// 		<i class="icon-bag"></i>
+		// 	</span>
+		// 	</a>
+		// 	</div>';
 		
 		/*if ( $title )
 			echo $before_title . $title . $after_title;*/
