@@ -59,7 +59,8 @@
 			</div>
 			<div class="span4 pagination-righted">
 				<div class="myaccount"><a href="<?php echo get_site_url(); ?>/my-account">My Account</a></div><?php dynamic_sidebar('cart'); ?>	 
-			</div>	 
+			</div>
+			<div class="social"><?php dynamic_sidebar('right'); ?></div>	 
 		</div>	
 		<div class="row-fluid nova-navigation">	 
 			<div id="sp-menu" class="span12">	 
