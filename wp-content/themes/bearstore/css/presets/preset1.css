@@ -71,6 +71,8 @@ h6 {
 }
 #sp-header-wrapper #logo {
   background-image: url('http://www.femmefatalelashes.com/wp-content/uploads/2014/03/fflogo5.png');
+    background-size: 100% auto;
+    float: right;
 }
 #breadcrumbs-wrapper {
   border-bottom: 1px solid #EEEEEE;
