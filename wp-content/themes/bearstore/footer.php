@@ -27,10 +27,7 @@ Please add widget to here
 	    <div class="row-fluid">
 			<div class="span7 about-responsive">
 					<?php //dynamic_sidebar('bottom1'); ?>
-					<?php echo do_shortcode('[alpine-phototile-for-instagram id=300 user="femmefatalelashes" src="user_liked" imgl="instagram" style="cascade" col="3" size="Th" num="6" shadow="1" highlight="1" align="left" max="60" nocredit="1"]'); ?>
-			</div>
-			<div class="span4">
-				<?php dynamic_sidebar('bottom2'); ?>
+					
 			</div>
 		</div>
 		<div class="row-fluid">
@@ -43,6 +40,9 @@ Please add widget to here
 						Please add widget to here
 				</div>						
 				<?php endif;?>
+			</div>
+			<div class="span4">
+				<?php dynamic_sidebar('bottom2'); ?>
 			</div>
 			<div class="span5 nova-newsletter-box">
 			<?php if (has_visible_widgets( 'bottom4' ) ) : ?>
