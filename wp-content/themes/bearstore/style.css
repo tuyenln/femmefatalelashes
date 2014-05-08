@@ -44,14 +44,14 @@ a:not(.btn):hover {
   color: #e8e8e8;
 }
 body {
-   background-color:  #ffecfb;
-  background-image: -moz-linear-gradient(top,#ffffff,#ffecfb);
+   background-color:  #fff;
+ /* background-image: -moz-linear-gradient(top,#ffffff,#ffecfb);
   background-image: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ffecfb));
   background-image: -webkit-linear-gradient(top,#ffffff,#ffecfb);
   background-image: -o-linear-gradient(top,#ffffff,#ffecfb);
   background-image: linear-gradient(to bottom,#ffffff,#ffecfb);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffecfb', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffecfb', GradientType=0);*/
 
 
 background-attachment:fixed;

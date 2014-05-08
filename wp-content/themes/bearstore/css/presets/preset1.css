@@ -159,7 +159,7 @@ h6 {
   left: 0 !important;
 }
 .bxslider {
-  left: -130px;
+    left: 0;
 }
 .bxslider li {
   padding: 0 8px !important;

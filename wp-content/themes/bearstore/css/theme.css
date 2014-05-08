@@ -5277,3 +5277,14 @@ ul.rss li::after {
 .fixed .hidden-desktop {
   display: none;
 }
+.home .blog-wrapper ul,.home .blog-wrapper li{list-style: none;text-align: center;}
+.home .blog-wrapper > h3{font: bold 20px 'Open Sans';color: #000;opacity: 0.58;text-align: center;margin: 0;text-transform: uppercase;}
+.home .blog-wrapper > h1{font: normal 26px 'libre_baskervilleregular';color: #000;text-align: center;margin: 0;text-transform: uppercase;padding-bottom: 30px;}
+.home .blog-wrapper .bxslider{text-align: center;}
+.home .blog-wrapper .left-content{width: 300px;display: inline-block;vertical-align: top;text-align: left;}
+.home .blog-wrapper .left-content h1{font: bold 37px 'Open Sans';color: #000;text-align: right;line-height: 40px;text-transform: uppercase;padding-bottom: 15px;}
+.home .blog-wrapper .left-content p{font: normal 20px 'libre_baskervilleregular';color: #000;text-align: left;line-height: 34px;}
+.home .blog-wrapper .right-content{width: 370px;display: inline-block;vertical-align: top;padding: 0 0 0 40px;margin-left: 30px;background: url("../images/line.jpg") no-repeat left center;}
+.home .blog-wrapper .bx-wrapper .bx-pager{display: none;}
+
+
