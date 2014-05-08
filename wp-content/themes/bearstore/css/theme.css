@@ -5242,3 +5242,7 @@ ul.rss li::after {
 #sp-header-wrapper #sp-menu .form-search label,
 #sp-header-wrapper #sp-menu .form-search button{display: none;}
 #sp-header-wrapper #sp-menu .form-search input{width: 72px;height: 14px;font: normal 10px Arial;color: #666;text-transform: uppercase;line-height: 14px;padding: 3px 8px;background: #fff;border-top: 1px solid #e3e3e3;border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;}
+
+.fullwidthabnner .entry-content{max-width: 1027px;}
+
+
