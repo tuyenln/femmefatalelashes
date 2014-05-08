@@ -2767,78 +2767,32 @@ input[type='button'].social:hover,
 submit.social:hover {
   text-decoration: none;
 }
+div.social{float: right;text-align: right;}
 .btn.social {
-  background: #e2e2e2;
-  padding: 4px 9px !important;
+  background: url("../images/social.png") no-repeat top left;
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   -o-transition: all 200ms;
   transition: all 200ms;
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+    margin-left: 6px;
 }
-.btn.social.twitter {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 4px;
-  font-size: 20px;
-  color: #a9a9a9;
-}
-.btn.social.twitter:hover {
-  color: #ce4d9c;
-}
-.btn.social.facebook {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 2px;
-  font-size: 20px;
-  color: #a9a9a9;
-}
-.btn.social.facebook:hover {
-  color: #ce4d9c;
-}
-.btn.social.gplus {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 2px;
-  font-size: 20px;
-  color: #a9a9a9;
-}
-.btn.social.gplus:hover {
-  color: #ce4d9c;
-}
-.btn.social.pinterest {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 2px;
-  font-size: 20px;
-  color: #a9a9a9;
-}
-.btn.social.pinterest:hover {
-  color: #ce4d9c;
-}
-.btn.social.linkedin {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  margin-right: 4px;
-  font-size: 20px;
-  color: #a9a9a9;
-}
-.btn.social.linkedin:hover {
-  color: #ce4d9c;
-}
-.btn.social.vimeo {
-  border: 1px solid #bfbfbf;
-  border-radius: 5px 5px 5px 5px;
-  font-size: 20px;
-  padding-left: 7px !important;
-  padding-right: 11px !important;
-  color: #a9a9a9;
-}
-.btn.social.vimeo:hover {
-  color: #ce4d9c;
-}
-.btn.social:hover {
-  text-decoration: none;
-}
+.btn.social i{display: none;}
+.btn.social.twitter {background-position: -15px 0;}
+.btn.social.twitter:hover {}
+.btn.social.facebook {}
+.btn.social.facebook:hover {}
+.btn.social.gplus {}
+.btn.social.gplus:hover {}
+.btn.social.pinterest {background-position: -38px 0;}
+.btn.social.pinterest:hover {}
+.btn.social.linkedin {}
+.btn.social.linkedin:hover {}
+.btn.social.vimeo {background-position: -58px 0;}
+.btn.social.vimeo:hover {}
+.btn.social:hover {}
 #error-page {
   background1: url(../images/404-error.png) no-repeat 100% 0;
   min-height: 400px;
