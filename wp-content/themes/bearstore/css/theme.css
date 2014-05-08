@@ -5290,3 +5290,6 @@ ul.rss li::after {
 .pagination-righted .mini-cart .mini-cart-title{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;visibility: hidden;}
 #sp-header-wrapper .container{width: 100%;max-width: none;}
 #sp-header-wrapper .container .row-fluid{width: 1027px;margin: 0 auto;}
+#sp-header-wrapper .container .row-fluid.nova-navigation{width: 100%;}
+#sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: 1027px;margin: 0 auto;}
+#sp-header-wrapper .container #product_search-2{display: none;}
