@@ -573,6 +573,12 @@ h4.nova-widget-recent-blog-tittle a {
 }
 #sp-bottom-wrapper a:not(.btn){
     color: #fff;
+    display: block;
+    font: 100 12px 'open sans';
+    text-transform: uppercase;
+}
+#sp-bottom-wrapper i{
+    display: none;
 }
 #sp-bottom-wrapper a:not(.btn):hover,
 #sp-footer-wrapper a:not(.btn):hover {
