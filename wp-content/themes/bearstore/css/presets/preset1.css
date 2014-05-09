@@ -563,24 +563,30 @@ h4.nova-widget-recent-blog-tittle a {
 }
 #sp-bottom-wrapper h3,
 #sp-footer-wrapper h3 {
-  color: #a9a9a9;
+  color: #fff;
 }
 #sp-bottom-wrapper a:not(.btn),
 #sp-footer-wrapper a:not(.btn) {
-  color: #a9a9a9;
+  color: #000;
+    font: normal 12px Arial;
+    line-height: 16px;
+}
+#sp-bottom-wrapper a:not(.btn){
+    color: #fff;
 }
 #sp-bottom-wrapper a:not(.btn):hover,
 #sp-footer-wrapper a:not(.btn):hover {
   color: #ce4d9c;
 }
 #sp-bottom-wrapper {
-  border-top: 5px solid #eee;
+  background: url("../../images/bg_footer.jpg") top center;
+    background-size: 100% auto;
 }
 #sp-bottom-wrapper::after {
   background: transparent;
 }
 #sp-footer-wrapper {
-  border-top: 5px solid #eee;
+  background: #fff4fd;
 }
 #sp-footer-wrapper::after {
   background: transparent;

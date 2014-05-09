@@ -39,7 +39,7 @@ line-height: 0;
   text-shadow: none;
   vertical-align: middle;
   cursor: pointer;
-  background-image: none !important;
+  background-image: none;
   *border: 1px solid #bbb;
   border: 0;
   border-bottom-color: #a2a2a2;
@@ -2487,7 +2487,10 @@ ul.breadcrumb {
 }
 #sp-footer-wrapper ul.menu li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 0 0 15px;
+}
+#sp-footer-wrapper ul.menu li:first-child{
+    margin-left: 0;
 }
 #sp-footer-wrapper ul.menu li a {
   display: block;
@@ -2777,7 +2780,7 @@ div.social{float: right;text-align: right;}
     width: 18px;
     height: 13px;
     display: inline-block;
-    margin-left: 6px;
+    margin-left: 6px;padding: 0;
 }
 .btn.social i{display: none;}
 .btn.social.twitter {background-position: -15px 0;}

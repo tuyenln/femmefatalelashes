@@ -63,7 +63,7 @@ Please add widget to here
 <footer id="sp-footer-wrapper" role="contentinfo">
 	<div class="container">
 		<div class="row-fluid">
-			<div class="span6">
+			<div class="span8">
 					<?php if ( has_nav_menu( 'footer-menu' ) ) : ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
                     <?php else: ?>
@@ -71,7 +71,7 @@ Please add widget to here
                     <?php endif; ?>
 
 			</div>		
-			<div class="span6 footer-right">
+			<div class="span4 footer-right">
 				<?php
 					Helix::addFeatures('footer');
 				?>
