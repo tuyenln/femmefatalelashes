@@ -61,7 +61,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 		$lastposts = get_posts( $args );
 		foreach($lastposts as $post) : setup_postdata($post); ?>
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<?php the_content(); ?>
+			<?php //the_content(); ?>
 			<a class="shop">Shop Now</a>
 		<?php endforeach; ?>
 
