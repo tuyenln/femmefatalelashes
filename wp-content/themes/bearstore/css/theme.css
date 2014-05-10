@@ -5310,7 +5310,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     .pagination-left span.freeOder{display: none;}
     #sp-header-wrapper .container{width: auto;}
     .home #sp-main-body-wrapper .container{width: auto;}
-    .pagination-righted,div.social{margin-top: 10px;}
+    .pagination-righted{margin-top: 10px;}
+    div.social{margin-bottom: 10px;}
     #sp-main-menu{display: none!important;}
     #sp-header-wrapper #sp-menu .form-search{margin: 0 0 30px;width: 100%;}
     #sp-header-wrapper #sp-menu .form-search input{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;height: 30px;}
