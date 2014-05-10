@@ -208,3 +208,7 @@
     .bx-wrapper .bx-next{right: 5px;}
 
 }
+@media screen and (max-width: 767px) {
+    .bx-wrapper .bx-prev{left: 5px;}
+    .bx-wrapper .bx-next{right: 5px;}
+}

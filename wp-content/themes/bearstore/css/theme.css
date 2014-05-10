@@ -3721,7 +3721,7 @@ ul.ourteam li .right-content {
 }
 #sp-main-menu {
   margin: 0 auto;
-  display: inline-block!important;
+  display: inline-block;
   text-align: left;
     padding: 10px 0;
 }
@@ -4340,10 +4340,7 @@ ul.rss li::after {
   .newsletter-box .input-box .input-text {
     max-width: 185px !important;
   }
-  .btn.social {
-    background: #fff;
-    padding: 4px 10px;
-  }
+  .btn.social {  }
   #toTop {
     display: none !important;
   }
@@ -5239,7 +5236,7 @@ ul.rss li::after {
 .pagination-righted .mini-cart .mini-cart-title{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;visibility: hidden;}
 #sp-header-wrapper .container{width: 100%;max-width: none;}
 #sp-header-wrapper .container .row-fluid{max-width: 1027px;margin: 0 auto;}
-#sp-header-wrapper .container .row-fluid.nova-navigation{width: 100%;background: #fff;border-top: 1px solid #000;}
+#sp-header-wrapper .container .row-fluid.nova-navigation{width: 100%;background: #fff;border-top: 1px solid #000;max-width: none;}
 #sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: 1027px;margin: 0 auto;float: none;}
 #sp-header-wrapper .container #product_search-2{display: none;}
 #sp-header-wrapper #sp-menu .form-search{float: right;margin: 9px 0 0;}
@@ -5290,10 +5287,12 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     #sp-header-wrapper .container .row-fluid.nova-navigation,
     #sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: auto;border-top: 0;}
     #sp-main-menu{display: none!important;}
-    #sp-header-wrapper #sp-menu .form-search{position: absolute;top: 100px;right: 10px;}
+    #sp-header-wrapper #sp-menu .form-search{position: absolute;top: 110px;right: 10px;}
+    #sp-header-wrapper #sp-menu .form-search input{width: 159px;}
     #sp-footer-wrapper ul.menu li{margin-right: 10px;margin-left: 0;}
     #sp-footer-wrapper ul.menu li:first-child{margin-right: 0;}
-
+    .mc4wp-form #mc4wp_email{width: 200px;}
+    .mc4wp-form input[type="submit"]{width: 80px;}
 }
 @media screen and (min-width: 981px) and (max-width: 1024px){
     #sp-header-wrapper .container .row-fluid{width: auto;padding: 0 10px;}
@@ -5301,4 +5300,28 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     #sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: 100%;}
     #sp-header-wrapper #sp-menu .form-search{margin-right: 10px;}
     #sp-main-menu{padding-left: 10px;}
+}
+@media screen and (max-width: 767px) {
+    .fullwidthabnner .entry-content{position: static;transform: translate(0,0);-moz-transform: translate(0,0);-webkit-transform: translate(0,0);padding: 0 10px;}
+    .fullwidthabnner .entry-content .row-fluid .span4{margin-bottom: 10px;text-align: center;}
+    .fullwidthabnner .entry-content .row-fluid .span4 img{margin: 0;}
+    #sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: 100%;}
+    .pagination-left span.freeOder{display: none;}
+    #sp-header-wrapper .container{width: auto;}
+    .home #sp-main-body-wrapper .container{width: auto;}
+    .pagination-righted{margin-top: 20px;}
+    #sp-main-menu{display: none;}
+    #sp-header-wrapper #sp-menu .form-search{margin: 0 0 30px;width: 100%;}
+    #sp-header-wrapper #sp-menu .form-search input{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;height: 30px;}
+    .home .blog-wrapper .left-content,.home .blog-wrapper .right-content{width: 100%;float: left;clear: both;}
+    .home .blog-wrapper li{padding: 0!important;background: none;}
+    .home .blog-wrapper .right-content{margin: 0;padding: 0;}
+    .home .blog-wrapper .bxslider{margin: 0;}
+    .home .blog-wrapper .left-content h1{font-size: 20px;line-height: 26px;text-align: center;}
+    .home .blog-wrapper .left-content p{font-size: 14px;line-height: 18px;text-align: center;}
+    .latest-blog{border: none;}
+    section#recent .product-item,section#recent .product-content{width: 100%;}
+    section#recent ul{margin: 0;}
+    section .left-image{width: 100%;}
+    section .right-content{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;clear: both;padding-top: 20px;}
 }
