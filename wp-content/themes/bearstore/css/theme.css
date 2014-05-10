@@ -5279,3 +5279,8 @@ section .right-content .content-last p{font-size: 15px;padding: 5px 0 0;}
 section#recent + section{padding: 50px 0;margin-top: 50px;border-top: 1px solid #000;}
 section#recent + section:after{display: block;clear: both;overflow: hidden;width: 0;height: 0;content: "";}
 .home #sp-main-body-wrapper .container{max-width: none;width: 100%;}
+
+#sp-bottom-wrapper .btn.social{background: url("../images/social-footer.png") no-repeat 10px 0;width: 32px;height: 24px;padding: 0;margin-bottom: 20px;}
+#sp-bottom-wrapper .btn.social.twitter{background-position: -29px 0;}
+#sp-bottom-wrapper .btn.social.pinterest {background-position: -72px 0;}
+.btn.social.vimeo {background-position: -110px 0;}
