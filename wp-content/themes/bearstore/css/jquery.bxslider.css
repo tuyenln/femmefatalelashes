@@ -199,3 +199,12 @@
 	font-size: .85em;
 	padding: 10px;
 }
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    .bx-wrapper .bx-prev{left: 5px;}
+    .bx-wrapper .bx-next{right: 5px;}
+}
+@media screen and (min-width: 981px) and (max-width: 1024px){
+    .bx-wrapper .bx-prev{left: 5px;}
+    .bx-wrapper .bx-next{right: 5px;}
+
+}
