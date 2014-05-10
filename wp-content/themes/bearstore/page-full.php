@@ -60,8 +60,13 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 		$args = array( 'numberposts' => 1 , 'category_name' => 'blog' );
 		$lastposts = get_posts( $args );
 		foreach($lastposts as $post) : setup_postdata($post); ?>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 			<?php //the_content(); ?>
+			<?php
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail();
+				}
+			?>
+			<h2 class="title=p"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>	
 			<a class="shop">Shop Now</a>
 		<?php endforeach; ?>
 
