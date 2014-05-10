@@ -3721,7 +3721,7 @@ ul.ourteam li .right-content {
 }
 #sp-main-menu {
   margin: 0 auto;
-  display: inline-block;
+  display: inline-block!important;
   text-align: left;
     padding: 10px 0;
 }
@@ -5293,10 +5293,11 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     #sp-footer-wrapper ul.menu li:first-child{margin-right: 0;}
     .mc4wp-form #mc4wp_email{width: 200px;}
     .mc4wp-form input[type="submit"]{width: 80px;}
+    .home .blog-wrapper .bxslider{margin: 0;}
 }
 @media screen and (min-width: 981px) and (max-width: 1024px){
     #sp-header-wrapper .container .row-fluid{width: auto;padding: 0 10px;}
-    #sp-header-wrapper .container .row-fluid.nova-navigation{padding: 0;border-top: 0;}
+    #sp-header-wrapper .container .row-fluid.nova-navigation{padding: 0;}
     #sp-header-wrapper .container .row-fluid.nova-navigation #sp-menu{width: 100%;}
     #sp-header-wrapper #sp-menu .form-search{margin-right: 10px;}
     #sp-main-menu{padding-left: 10px;}
@@ -5309,8 +5310,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     .pagination-left span.freeOder{display: none;}
     #sp-header-wrapper .container{width: auto;}
     .home #sp-main-body-wrapper .container{width: auto;}
-    .pagination-righted{margin-top: 20px;}
-    #sp-main-menu{display: none;}
+    .pagination-righted,div.social{margin-top: 10px;}
+    #sp-main-menu{display: none!important;}
     #sp-header-wrapper #sp-menu .form-search{margin: 0 0 30px;width: 100%;}
     #sp-header-wrapper #sp-menu .form-search input{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;height: 30px;}
     .home .blog-wrapper .left-content,.home .blog-wrapper .right-content{width: 100%;float: left;clear: both;}
@@ -5324,4 +5325,6 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
     section#recent ul{margin: 0;}
     section .left-image{width: 100%;}
     section .right-content{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;clear: both;padding-top: 20px;}
+    .mc4wp-form #mc4wp_email{width: 215px;}
+    .mc4wp-form input[type="submit"]{width: 85px;}
 }
