@@ -57,7 +57,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 
 	<div class="latest-blog">
 	<?php
-		$args = array( 'numberposts' => 1 , 'category_name' => 'blog' );
+		$args = array( 'numberposts' => 1 , 'category_name' => 'promo-category' );
 		$lastposts = get_posts( $args );
 		foreach($lastposts as $post) : setup_postdata($post); ?>
 			<?php //the_content(); ?>
