@@ -105,7 +105,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 
     </ul><!-- /row-fluid -->
 </section><!-- /recent -->
-<section>
+<section class="last-session">
 	<?php
 		$args = array( 'numberposts' => 1 , 'category_name' => 'uncategorized' );
 		$lastposts = get_posts( $args );
