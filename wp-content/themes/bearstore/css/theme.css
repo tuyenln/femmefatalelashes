@@ -5284,6 +5284,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
 section.last-session{max-width: 1170px;margin: 0 auto;}
 section.last-session .left-image img{/*width: 80px;height: auto;border-radius: 80px;-moz-border-radius: 80px;-webkit-border-radius: 80px;*/}
 
+#sp-bottom-wrapper h3, #sp-footer-wrapper h3,.aptfinbytap_domain-6 h3{font: 100 18px/140% 'open sans',sans-serif;}
+
 @media screen and (min-width: 768px) and (max-width: 980px){
     #sp-header-wrapper .container .row-fluid{padding: 0 10px;width: auto;}
     #sp-header-wrapper .container .row-fluid.nova-navigation,
