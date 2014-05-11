@@ -5250,9 +5250,9 @@ ul.rss li::after {
 .fullwidthabnner .entry-content .row-fluid{margin: 0;}
 .fullwidthabnner .entry-content .row-fluid .span4{border: 1px solid #000;}
 
-section#recent{padding-bottom: 10px;}
+section#recent{padding-bottom: 50px;border-bottom: 1px solid #000;}
 section#recent .row-fluid [class*="span"]{margin-left: 0;}
-section#recent .product-item{width: 43%;float: left;}
+section#recent .product-item{width: 34%;float: left;padding-left: 10%;}
 section#recent .product-item img{width: 100%;height: auto;}
 section#recent .product-content{width: 40%;float: right;}
 section#recent .product-content h3{font: bold 19px 'open sans';color: #000;text-transform: uppercase;}
@@ -5273,7 +5273,7 @@ section .right-content{float: right;width: 36%;margin: 0;padding: 0 7%;text-alig
 section .right-content p{font: normal 20px 'libre_baskervilleitalic';color: #000;line-height: 26px;}
 section .right-content .content-last p{font-size: 15px;padding: 5px 0 0;}
 
-section#recent + section{padding: 50px 0;margin-top: 50px;border-top: 1px solid #000;}
+section#recent + section{padding: 50px 0;margin-top: 50px;}
 section#recent + section:after{display: block;clear: both;overflow: hidden;width: 0;height: 0;content: "";}
 .home #sp-main-body-wrapper .container{max-width: none;width: 100%;}
 
@@ -5281,6 +5281,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
 #sp-bottom-wrapper .btn.social.twitter{background-position: -29px 0;}
 #sp-bottom-wrapper .btn.social.pinterest {background-position: -72px 0;}
 .btn.social.vimeo {background-position: -110px 0;}
+section.last-session{max-width: 1170px;margin: 0 auto;}
+section.last-session .left-image img{/*width: 80px;height: auto;border-radius: 80px;-moz-border-radius: 80px;-webkit-border-radius: 80px;*/}
 
 @media screen and (min-width: 768px) and (max-width: 980px){
     #sp-header-wrapper .container .row-fluid{padding: 0 10px;width: auto;}
