@@ -88,7 +88,10 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 
                         <a class="product-item" id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
-                            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); else echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
+                            <?php if (has_post_thumbnail( $loop->post->ID )) 
+                            echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
+                            else 
+                            echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
 
                             
 
@@ -108,14 +111,17 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
     </ul><!-- /row-fluid -->
 </section><!-- /recent -->
 <section class="last-session">
+	<h3 class="title-laste">SEE WHO<i class="icon-wishlist"></i>  'S OUR LASHES</h3>
+	<ul class="bxsliderl">
 	<?php
-		$args = array( 'numberposts' => 1 , 'category_name' => 'uncategorized' );
+		$args = array( 'numberposts' => 4 , 'category_name' => 'uncategorized' );
 		$lastposts = get_posts( $args );
 		foreach($lastposts as $post) : setup_postdata($post); ?>
+		<li>
 			<div class="left-image">
 					<?php
 						if ( has_post_thumbnail() ) {
-						    the_post_thumbnail();
+						    the_post_thumbnail('full');
 						}
 					?>	
 			</div>
@@ -123,6 +129,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 				<div class="content-p"><?php the_content(); ?></div>
 				<div class="content-last"><?php the_excerpt() ?></div>
 			</div>
+		</li>
 		<?php endforeach; ?>
 </section>
 
