@@ -36,7 +36,8 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 				<li>
 					<div class="left-content">
 						<h1><?php echo  the_title() ?></h1>
-						<p class="blog-content"><?php echo the_excerpt() ?></p>
+						<p class="blog-content"><?php echo get_excerpt(230); ?></p>
+						<a href="<?php the_permalink()?>" class="read-more"><?php the_title()?></a>
 					</div>
 					<div class="right-content">
 					<?php
