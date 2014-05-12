@@ -86,7 +86,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 
                     <li class="span3">    
 
-                        <a class="product-item" id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                        <a class="product-item" id="id-<?php the_id(); ?>" href="" title="<?php the_title(); ?>">
 
                             <?php if (has_post_thumbnail( $loop->post->ID )) 
                             echo get_the_post_thumbnail($loop->post->ID, 'full'); 
@@ -100,7 +100,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
                         		<h3><?php the_title(); ?></h3>
                         	   	<span class="price"><?php echo $product->get_price_html(); ?></span>
                         	   	<p class="pro-description"><?php the_excerpt()?></p>
-                        	   	<a class="more-view">see more</a>
+                        	   	<a href="<?php the_permalink()?>" class="more-view">see more</a>
                         </div>
 
                         <?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
