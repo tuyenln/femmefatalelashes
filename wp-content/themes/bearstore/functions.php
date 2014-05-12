@@ -1417,6 +1417,6 @@ if(!function_exists('nova_recent_blog_sc')) {
       $excerpt = strip_tags($excerpt);
       $excerpt = substr($excerpt, 0, $count);
       $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-      $excerpt = $excerpt;
+      $excerpt = $excerpt.'...';
       return $excerpt;
     }
