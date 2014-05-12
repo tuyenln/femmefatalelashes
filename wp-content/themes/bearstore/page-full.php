@@ -89,9 +89,9 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
                         <a class="product-item" id="id-<?php the_id(); ?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
                             <?php if (has_post_thumbnail( $loop->post->ID )) 
-                            echo get_the_post_thumbnail($loop->post->ID, 'shop_catalog'); 
+                            echo get_the_post_thumbnail($loop->post->ID, 'full'); 
                             else 
-                            echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" width="65px" height="115px" />'; ?>
+                            echo '<img src="'.woocommerce_placeholder_img_src().'" alt="Placeholder" />'; ?>
 
                             
 
