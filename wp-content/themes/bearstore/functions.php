@@ -1420,3 +1420,10 @@ if(!function_exists('nova_recent_blog_sc')) {
       $excerpt = $excerpt.'...';
       return $excerpt;
     }
+
+    function the_title_limit($length, $replacer = '...') {
+     $string = the_title('','',FALSE);
+     if(strlen($string) > $length)
+     $string = (preg_match('/^(.*)\W.*$/', substr($string, 0, $length+1), $matches) ? $matches[1] : substr($string, 0, $length)) . $replacer;
+     echo $string;
+    }
