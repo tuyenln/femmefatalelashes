@@ -5264,6 +5264,7 @@ section#recent .bx-controls-direction{display: none;}
 .mc4wp-form input[type=submit]{width: 90px;display: inline-block;vertical-align: top;font: bold 23px 'open sans';color: #000;text-transform: uppercase;background: #fff;line-height: 24px;padding: 11px 0;text-align: center;height: 52px;}
 
 .latest-blog{clear: both;position: relative;margin: 0 auto 50px;border-top: 1px solid #000;border-bottom: 1px solid #000;}
+.latest-blog > img{width: 100%;height: auto;}
 .latest-blog h2{position: absolute;width: 250px;right: 40px;top: 50%;transform: translate(0,-50%);-moz-transform: translate(0,-50%);-webkit-transform: translate(0,-50%);text-align: right;}
 .latest-blog h2 a{font: 100 27px 'open sans';line-height: 36px;color: #000;text-transform: uppercase;}
 .latest-blog a.shop{position: absolute;bottom: 60px;right: 40px;font: bold 21px 'open sans';color: #000;text-transform: uppercase;}
@@ -5282,7 +5283,7 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
 #sp-bottom-wrapper .btn.social.pinterest {background-position: -72px 0;}
 .btn.social.vimeo {background-position: -110px 0;}
 section.last-session{max-width: 1170px;margin: 0 auto;}
-section.last-session .left-image img{/*width: 80px;height: auto;border-radius: 80px;-moz-border-radius: 80px;-webkit-border-radius: 80px;*/}
+section.last-session .left-image img{border-radius: 800px;-moz-border-radius: 800px;-webkit-border-radius: 800px;}
 
 #sp-bottom-wrapper h3, #sp-footer-wrapper h3,.aptfinbytap_domain-6 h3{font: 100 18px/140% 'open sans',sans-serif;}
 
@@ -5332,4 +5333,7 @@ section.last-session .left-image img{/*width: 80px;height: auto;border-radius: 8
     section .right-content{width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;clear: both;padding-top: 20px;}
     .mc4wp-form #mc4wp_email{width: 215px;}
     .mc4wp-form input[type="submit"]{width: 85px;}
+    .latest-blog h2{top: 30%;}
+    .latest-blog h2 a{font-size: 12px;line-height: 15px;display: block;}
+    .latest-blog a.shop{bottom: 10px;font-size: 15px;}
 }
