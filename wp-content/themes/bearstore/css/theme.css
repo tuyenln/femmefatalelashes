@@ -2363,10 +2363,10 @@ ins .amount {
   border-top: #bfbfbf 1px solid;
   padding-top: 20px;
 }
-.footer-info-top {
+/*.footer-info-top {
   padding: 20px 0 15px 0;
   background: url("../images/border-header-bottom.png") repeat-x top left;
-}
+}*/
 .footer-info-top .footer-info li {
   font: 18px/140% 'CaviarDreamsRegular', sans-serif;
   text-transform: uppercase;
