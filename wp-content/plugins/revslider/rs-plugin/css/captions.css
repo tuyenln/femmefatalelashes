@@ -38,9 +38,9 @@
 			color: #fff; 
 			text-shadow: none; 
 			font-weight: 700; 
-			font-size: 36px; 
-			line-height: 36px; 
-			font-family: Arial; 
+			font-size: 62px;
+			line-height: 60px;
+			font-family: 'libre_baskervilleitalic';
 			padding: 0px 4px; 
 			padding-top: 1px;
 			margin: 0px; 
@@ -49,6 +49,11 @@
 			background-color:#000;	
 			letter-spacing: -1.5px;										
 		}
+.tp-caption.big_white .text-bot{
+    font: normal 70px 'bebas_neueregular';
+    color: #fff;
+    line-height: 70px;
+}
 
 .tp-caption.big_orange{
 			position: absolute; 
