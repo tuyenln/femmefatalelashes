@@ -49,9 +49,8 @@
 			letter-spacing: -1.5px;										
 		}
 .tp-caption.big_white .text-bot{
-    font: normal 70px 'bebas_neueregular';
+    font-family: 'bebas_neueregular';
     color: #fff;
-    line-height: 47px;
 }
 
 .tp-caption.big_orange{
