@@ -38,21 +38,20 @@
 			color: #fff; 
 			text-shadow: none; 
 			font-weight: 700; 
-			font-size: 62px;
-			line-height: 60px;
+			font-size: 60px;
+			line-height: 47px;
 			font-family: 'libre_baskervilleitalic';
 			padding: 0px 4px; 
 			padding-top: 1px;
 			margin: 0px; 
 			border-width: 0px; 
-			border-style: none; 
-			background-color:#000;	
+			border-style: none;
 			letter-spacing: -1.5px;										
 		}
 .tp-caption.big_white .text-bot{
     font: normal 70px 'bebas_neueregular';
     color: #fff;
-    line-height: 70px;
+    line-height: 47px;
 }
 
 .tp-caption.big_orange{
