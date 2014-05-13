@@ -5284,7 +5284,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
 #sp-bottom-wrapper .btn.social.twitter{background-position: -29px 0;}
 #sp-bottom-wrapper .btn.social.pinterest {background-position: -72px 0;}
 .btn.social.vimeo {background-position: -110px 0;}
-section.last-session{max-width: 790px;margin: 0 auto;background: #fcf1f7;}
+section.last-session{margin: 0 auto;background: #fcf1f7;}
+section.last-session .bx-wrapper{max-width: 790px!important;}
 section.last-session h3{text-align: center;font: normal 18px 'CaviarDreamsRegular',sans-serif;line-height: 140%;}
 section.last-session .left-image img{border-radius: 800px;-moz-border-radius: 800px;-webkit-border-radius: 800px;max-width: 200px;}
 section.last-session .right-content{padding-top: 20px;text-transform: uppercase;}
