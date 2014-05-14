@@ -5263,7 +5263,7 @@ section#recent .product-content a.more-view{font: bold 17px 'open sans';color: #
 section#recent .bx-controls-direction{display: none;}
 
 .mc4wp-form #mc4wp_email{font: normal 17px 'libre_baskervilleitalic';line-height: 24px;color: #000;padding: 14px 16px;width: 254px;border-radius: 0;-moz-border-radius: 0;-webkit-border-radius: 0;display: inline-block;vertical-align: top;}
-.mc4wp-form input[type=submit]{width: 90px;display: inline-block;vertical-align: top;font: bold 23px 'open sans';color: #000;text-transform: uppercase;background: #fff;line-height: 24px;padding: 11px 0;text-align: center;height: 51px;}
+.mc4wp-form input[type=submit]{width: 90px;display: inline-block;vertical-align: top;font: bold 23px 'open sans';color: #000;text-transform: uppercase;background: #fff;line-height: 24px;padding: 11px 0;text-align: center;height: 53px;}
 
 .latest-blog{clear: both;position: relative;margin: 0 auto 50px;border-top: 1px solid #000;border-bottom: 1px solid #000;}
 .latest-blog > img{width: 100%;height: auto;}
