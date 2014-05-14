@@ -5276,7 +5276,7 @@ section .right-content{float: right;width: 36%;margin: 0;padding: 0 7%;text-alig
 section .right-content p{font: normal 20px 'libre_baskervilleitalic';color: #000;line-height: 26px;}
 section .right-content .content-last p{font-size: 15px;padding: 5px 0 0;}
 
-section#recent + section{padding: 50px 0;}
+section#recent + section{padding: 30px 0 0;}
 section#recent + section:after{display: block;clear: both;overflow: hidden;width: 0;height: 0;content: "";}
 .home #sp-main-body-wrapper .container{max-width: none;width: 100%;}
 
@@ -5286,7 +5286,8 @@ section#recent + section:after{display: block;clear: both;overflow: hidden;width
 #sp-bottom-wrapper .btn.social.instagram{background-position: -110px 0;}
 .btn.social.vimeo {background-position: -110px 0;}
 section.last-session{margin: 0 auto;background: #fcf1f7;}
-section.last-session .bx-wrapper{max-width: 790px!important;}
+section.last-session .bx-wrapper{max-width: 790px!important;margin-bottom: 10px;}
+section.last-session .bx-wrapper .bx-pager{bottom: -10px;}
 section.last-session h3{text-align: center;font: normal 18px 'CaviarDreamsRegular',sans-serif;line-height: 140%;}
 section.last-session .left-image img{border-radius: 800px;-moz-border-radius: 800px;-webkit-border-radius: 800px;max-width: 200px;}
 section.last-session .right-content{padding-top: 20px;text-transform: uppercase;}
