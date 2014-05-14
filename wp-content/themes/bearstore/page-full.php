@@ -69,7 +69,7 @@ query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => -1 ) );
 				}
 			?>
 			<h2 class="title=p"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>	
-			<a class="shop">Shop Now</a>
+			<a href="<?php echo get_site_url(); ?>/shop" class="shop">Shop Now</a>
 		<?php endforeach; ?>
 
 	</div>
