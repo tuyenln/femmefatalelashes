@@ -5249,7 +5249,7 @@ ul.rss li::after {
 #fullwidthbanner-container{position: relative;}
 .fullwidthabnner .entry-content{max-width: 1170px;position: absolute;bottom: 50px;left: 50%;transform: translate(-50%,0);-moz-transform: translate(-50%,0);-webkit-transform: translate(-50%,0);margin: 0;padding: 0 10px;width: 100%;box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;}
 .fullwidthabnner .entry-content .row-fluid{margin: 0;text-align: center;}
-.fullwidthabnner .entry-content .row-fluid .span4{border: 1px solid #000;float: none;display: inline-block;max-width: 300px;}
+.fullwidthabnner .entry-content .row-fluid .span4{border: 1px solid #000;float: none;display: inline-block;max-width: 324px;}
 .fullwidthabnner .entry-content .row-fluid .span4 img{width: 100%;height: auto;}
 
 section#recent{padding-bottom: 50px;border-bottom: 1px solid #000;}
