@@ -297,9 +297,11 @@
 					
 .tp-caption a { 
 	color: #000!important; text-shadow: none!important;position: relative;display: block;padding-right: 33px;
-    font: normal 13px 'libre_baskervilleregular';
+    font: normal 13px 'libre_baskervilleitalic';
+    line-height: 21px!important;
+    height: 19px;
 }
-.tp-caption a:before{content: ">>";width: 20px;height: 100%;line-height: 45px;color: #000;position: absolute;right: 0;top: 0;}
+.tp-caption a:before{content: ">>";width: 20px;height: 100%;line-height: 29px;color: #000;position: absolute;right: 5px;top: 0;font-family: 'libre_baskervilleitalic'}
 .tp-caption a:hover { 
 	color: #ffa902; 
 }
