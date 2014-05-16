@@ -38,17 +38,20 @@
 			color: #fff; 
 			text-shadow: none; 
 			font-weight: 700; 
-			font-size: 36px; 
-			line-height: 36px; 
-			font-family: Arial; 
+			font-size: 60px;
+			line-height: 47px;
+			font-family: 'libre_baskervilleitalic';
 			padding: 0px 4px; 
 			padding-top: 1px;
 			margin: 0px; 
 			border-width: 0px; 
-			border-style: none; 
-			background-color:#000;	
+			border-style: none;
 			letter-spacing: -1.5px;										
 		}
+.tp-caption.big_white .text-bot{
+    font-family: 'bebas_neueregular';
+    color: #fff;
+}
 
 .tp-caption.big_orange{
 			position: absolute; 
@@ -293,9 +296,12 @@
 	}	
 					
 .tp-caption a { 
-	color: #ff7302; text-shadow: none;	-webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out;	 
-}			
-	
+	color: #000!important; text-shadow: none!important;position: relative;display: block;padding-right: 33px;
+    font: normal 13px 'libre_baskervilleitalic';
+    line-height: 21px!important;
+    height: 19px;
+}
+.tp-caption a:before{content: ">>";width: 20px;height: 100%;line-height: 29px;color: #000;position: absolute;right: 5px;top: 0;font-family: 'libre_baskervilleitalic'}
 .tp-caption a:hover { 
 	color: #ffa902; 
 }
